@@ -9,9 +9,28 @@ his is a programming exercise of the lecture **Fundamentals of Artificial Intell
 | Number of best solutions  | 1605/2077 |
 
 # In action solutions 
-![Alt text](Solution%20GIFs/ScreenRecording2024-01-24at1.02.47pm-ezgif.com-crop.gif)
+Motion Primitive Used: **V_0.0_20.0_Vstep_2.22_SA_-1.066_1.066_SAstep_0.18_T_0.5_Model_BMW_320i.xml**
 
-ZAM_Tjunction-1_354_T-1 with V_0.0_20.0_Vstep_2.22_SA_-1.066_1.066_SAstep_0.18_T_0.5_Model_BMW_320i Motion Primitive
+![Alt text](Solution%20GIFs/DEU_BadEssen-2_2_T-1.gif)
+DEU_BadEssen-2_2_T-1
+
+![Alt text](Solution%20GIFs/DEU_Flensburg-68_1_T-1.gif)
+DEU_Flensburg-68_1_T-1
+
+![Alt text](Solution%20GIFs/FRA_Miramas-1_4_T-1.gif)
+FRA_Miramas-1_4_T-1
+
+![Alt text](Solution%20GIFs/USA_Lanker-2_20_T-1.gif)
+USA_Lanker-2_20_T-1
+
+![Alt text](Solution%20GIFs/USA_Peach-3_3_T-1.gif)
+USA_Peach-3_3_T-1
+
+![Alt text](Solution%20GIFs/USA_US101-20_2_T-1.gif)
+USA_US101-20_2_T-1
+
+![Alt text](Solution%20GIFs/ZAM_Tjunction-1_4_T-1.gif)
+ZAM_Tjunction-1_4_T-1
 
 # It is plagarism to copy my solution, this github page is to show skills and provide guidance. 
 
