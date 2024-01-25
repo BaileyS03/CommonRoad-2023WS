@@ -5,7 +5,7 @@ This is a programming exercise of the lecture **Fundamentals of Artificial Intel
 
 | Place              | 1                   |
 | ----------------- | ---------------------------------|
-| Number of Best Solutions         | 1104  |
+| Number of Best Solutions         | 1140  |
 | Solutions Solved  | 1622/2077 |
 
 # Code Sections
