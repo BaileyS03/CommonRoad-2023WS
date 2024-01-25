@@ -8,6 +8,9 @@ his is a programming exercise of the lecture **Fundamentals of Artificial Intell
 | Number of Best Solutions         | 1104  |
 | Solutions Solved  | 1622/2077 |
 
+# Code Sections
+Student.py is where I implemented the heuristic for the A* search algorithm to rank the search paths. The motion primitives and automata (automata is a conversation of motion primitive files required for batch processing/tutorial 2) are in their own files. The batch processor was run with each automata file to achieve the lowest cost, however the most flexible automata were V_0.0_20.0_Vstep_2.22_SA_-1.066_1.066_SAstep_0.18_T_0.5_Model_BMW_320i.xml which solves the most scenarios in one run. 
+
 # In action solutions 
 Motion Primitive Used: **V_0.0_20.0_Vstep_2.22_SA_-1.066_1.066_SAstep_0.18_T_0.5_Model_BMW_320i.xml**
 
