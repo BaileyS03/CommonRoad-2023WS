@@ -5,8 +5,8 @@ his is a programming exercise of the lecture **Fundamentals of Artificial Intell
 
 | Place              | 1                   |
 | ----------------- | ---------------------------------|
-| Solutions Solved         | 1104  |
-| Number of best solutions  | 1622/2077 |
+| Number of Best Solutions         | 1104  |
+| Solutions Solved  | 1622/2077 |
 
 # In action solutions 
 Motion Primitive Used: **V_0.0_20.0_Vstep_2.22_SA_-1.066_1.066_SAstep_0.18_T_0.5_Model_BMW_320i.xml**
