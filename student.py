@@ -8,7 +8,7 @@ import numpy as np
 from scipy.spatial import cKDTree
 import math
 
-class StudentMotionPlanner(AStarSearch):
+class StudentMotionPlanner(AStarSearch): # Better to be GBFS
     def __init__(self, scenario, planningProblem, automata, plot_config=DefaultPlotConfig):
         super().__init__(scenario=scenario, planningProblem=planningProblem, automaton=automata,
                          plot_config=plot_config)
@@ -142,9 +142,7 @@ class optimalRoutePlannng(AStarSearch):
         self._distance_initial = distance_initial
         self._position_initial = position_initial
         self._position_desired = position_desired # consists of 2 pairs of points, one at start and one at end
-        
-        # Equation used from a previous student 
-        self._steps_desired_end = max((steps_desired.end + steps_desired.start)//2, steps_desired.end - 6) 
+        self._steps_desired_end = max((steps_desired.end + steps_desired.start)//2, steps_desired.end) 
         
         route_planner = RoutePlanner(scenario, planningProblem, backend=RoutePlanner.Backend.NETWORKX)
         candidate_holder = route_planner.plan_routes()
@@ -155,7 +153,7 @@ class optimalRoutePlannng(AStarSearch):
             self._number_of_distance_steps_per_time_step = None #this is redefined when we call track_path
             self._solution = True
         
-            #utilise a KD tree to measure if points in the route_path are close to an arbitrary current point from the heuristic 
+            # utilise a KD tree to measure if points in the route_path are close to an arbitrary current point from the heuristic 
             self._data_points = cKDTree(self._route_path)
 
             #now define the required steps to stay on track with the optimal path timewise
@@ -185,14 +183,16 @@ class optimalRoutePlannng(AStarSearch):
             return math.atan2(current_point[1] - previous_point[1], current_point[0] - previous_point[0])
         else:
             return 0
-    
+
+    #Score distance doesn't include turning just straight-line distances
     def score_distance(self, point):
         if self._solution == True:
             distance = math.sqrt((point[0] - self._point[0])**2 + (point[1] - self._point[1])**2)
             return (distance)
         else:
             return 0 
-        
+
+    #Score orientation can be improved upon, did not do what I assumed it did. 
     def score_orientation(self, orientation):
         if self._solution == True:
             angle_difference = abs(orientation - self._orientation)
@@ -203,7 +203,7 @@ class optimalRoutePlannng(AStarSearch):
     
     def track_optimal_path(self):
          if self._solution == True:
-            #find initial point and distance from the optimal path
+            #find the initial point and distance from the optimal path
             distance, closest_point_index = self._data_points.query(self._position_initial)
 
             #deal with the different types of scenarios. E.g., survival vs goal-based
