@@ -128,6 +128,7 @@ class StudentMotionPlanner(AStarSearch): # Better to be GBFS
                 return (sum(weights_combined) / len(weights_combined)) * 1.3
         
 class optimalRoutePlannng(AStarSearch):
+    #Class usage inspires by hans66hsu
     def __init__(self, scenario, planningProblem, steps_desired, distance_initial, position_initial, position_desired):
         """
         input:
