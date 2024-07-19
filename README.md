@@ -38,8 +38,5 @@ USA_US101-20_2_T-1
 ZAM_Tjunction-1_4_T-1
 
 # Approach 
-To achieve lower costs based on the SM1 cost function in this challenge, the crucial strategy involves minimizing acceleration (velocity change) and steering changes. This was successfully implemented by constraining search options using motion primitives. Furthermore, the route planner was employed alongside a KD tree, allowing a comparison of the current position with the closest point in the KD data structure. To enhance the suitability for the heuristic function, the distance metric obtained from this comparison was then scaled through an additional function.
-
-
-# It is plagiarism to copy my solution, this GitHub page is to show skills and provide guidance. 
+To achieve lower costs based on the SM1 cost function in this challenge, the crucial strategy involves minimising acceleration (velocity change) and steering changes. This was successfully implemented by constraining search options using motion primitives. Furthermore, the route planner was employed alongside a KD tree, allowing a comparison of the current position with the closest point in the KD data structure. To enhance the suitability for the heuristic function, the distance metric obtained from this comparison was then scaled through an additional function.
 
